@@ -3,8 +3,8 @@
   hosts: local
   connection: local
 
-  vars:
-    NAME: from play level
+  # vars:
+  #   NAME: from play level
 
   # vars_files:
   #   - course.yaml
@@ -26,5 +26,6 @@
         #2nd prefrence is task level variables
         #3rd prefrence is files(course.yaml file)
         #4th prefrence is from prompt
+        #5th prefrence is from play level
 
 
