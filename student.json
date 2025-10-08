@@ -1,0 +1,11 @@
+{
+  "name": "Sathish",
+  "age": 20,
+  "roll_number": "A101",
+  "department": "Computer Science",
+  "marks": {
+    "math": 85,
+    "science": 90,
+    "english": 88
+  }
+}

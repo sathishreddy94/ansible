@@ -1,0 +1,24 @@
+<students>
+
+    <!-- object1 -->
+  <student>
+    <name>Sathish</name>
+    <age>20</age>
+    <roll_number>A101</roll_number>
+    <department>Computer Science</department>
+  </student>
+<!-- object2 -->
+  <student>
+    <name>Ravi</name>
+    <age>21</age>
+    <roll_number>A102</roll_number>
+    <department>Mechanical</department>
+  </student>
+<!-- object3 -->
+  <student>
+    <name>Priya</name>
+    <age>19</age>
+    <roll_number>A103</roll_number>
+    <department>Electronics</department>
+  </student>
+</students>
