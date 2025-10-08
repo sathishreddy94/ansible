@@ -1,8 +1,6 @@
 ---
-
--name: ping server
-hosts: frontend #which server ur connecting to
-#List of tasks/collections/modules
-tasks:
--name: ping
-ansible.builtin.ping:
+- name: Ping server
+  hosts: frontend   # which server group you're connecting to
+  tasks:            # list of tasks to perform
+    - name: Ping
+      ansible.builtin.ping:
