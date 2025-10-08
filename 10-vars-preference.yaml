@@ -9,10 +9,10 @@
   # vars_files:
   #   - course.yaml
 
-  vars_prompt:
-    - name: NAME
-      prompt: "What is your NAME?"
-      private: false
+  # vars_prompt:
+  #   - name: NAME
+  #     prompt: "What is your NAME?"
+  #     private: false
 
   tasks:
     - name: testing variables preference
@@ -25,4 +25,6 @@
         #1st prefrence is command line aruguements
         #2nd prefrence is task level variables
         #3rd prefrence is files(course.yaml file)
+        #4th prefrence is from prompt
+
 
