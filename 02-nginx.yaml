@@ -1,6 +1,6 @@
 ---
 - name: Install and configure nginx for static website hosting
-  hosts: webservers
+  hosts: frontend
   become: yes
 
   tasks:
@@ -14,4 +14,3 @@
         name: nginx
         state: started
         enabled: yes
-        
