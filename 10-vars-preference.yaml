@@ -6,8 +6,8 @@
   vars:
     NAME: from play level
 
-  vars_files:
-    - course.yaml
+  # vars_files:
+  #   - course.yaml
 
   vars_prompt:
     - name: NAME
@@ -24,4 +24,5 @@
 
         #1st prefrence is command line aruguements
         #2nd prefrence is task level variables
+        #3rd prefrence is files(course.yaml file)
 
