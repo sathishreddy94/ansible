@@ -1,17 +1,22 @@
--name: checking variable preference
-hosts: local
-connection: local
-vars:
- NAME: from play level
-vars_files:
-- course.yaml
-vars_prompt:
-- name: NAME
-  prompt: what is your NAME?
-  private: false
-tasks:
-- name: testing variables preference
+---
+- name: checking variable preference
+  hosts: local
+  connection: local
+
   vars:
-    NAME: from task level
-  ansible.builtin.debug:
-    msg: "Name is : {{ NAME }}"
+    NAME: from play level
+
+  vars_files:
+    - course.yaml
+
+  vars_prompt:
+    - name: NAME
+      prompt: "What is your NAME?"
+      private: false
+
+  tasks:
+    - name: testing variables preference
+      vars:
+        NAME: from task level
+      ansible.builtin.debug:
+        msg: "Name is: {{ NAME }}"
