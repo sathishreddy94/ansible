@@ -7,7 +7,7 @@
     technologies: "Deveops,linux,ansible"
     name: "sathish kumar reddy raghuram"
     email: "INFO@GMAIL.COM"
-    ipaddress: 192.1.0.255555555555
+    ipaddress: "192.1.0.255555555555"
 
     # Dictionary (map)
     tags:
