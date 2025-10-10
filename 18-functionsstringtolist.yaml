@@ -6,7 +6,8 @@
     # String
     technologies: "Deveops,linux,ansible"
     name: "sathish kumar reddy raghuram"
-    gmail: "INFO@GMAIL.COM"
+    email: "INFO@GMAIL.COM"
+    ipaddress: 192.1.0.255555555555
 
     # Dictionary (map)
     tags:
@@ -64,6 +65,12 @@
        msg: "{{ name | upper }}"
 
     # convert lower case
-    - name: convert upper case
+    - name: convert lower case
       ansible.builtin.debug:
-       msg: "{{ gmail | lower }}"
+       msg: "{{ email | lower }}"
+
+
+     # to check ip address is valid or not
+    - name: to check ip address is valid or not
+      ansible.builtin.debug:
+       msg: "{{ ipaddress | ansible.utils.ipv4 }}"
