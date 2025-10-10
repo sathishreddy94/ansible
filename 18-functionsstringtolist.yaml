@@ -5,6 +5,8 @@
   vars:
     # String
     technologies: "Deveops,linux,ansible"
+    name: "sathish kumar reddy raghuram"
+    gmail: "INFO@GMAIL.COM"
 
     # Dictionary (map)
     tags:
@@ -49,8 +51,19 @@
         msg: "json: {{ student_yaml | to_json }} "
 
 
-   # List → Map
+   # save json to a file
     - name: save json to a file
       ansible.builtin.copy:
         dest: ./student-data.json
         content: "{{ student_yaml | to_nice_json }} "
+
+
+    # convert upper case
+    - name: convert upper case
+      ansible.builtin.debug:
+       msg: "{{ name | upper }}"
+
+    # convert lower case
+    - name: convert upper case
+      ansible.builtin.debug:
+       msg: "{{ gmail | lower }}"
