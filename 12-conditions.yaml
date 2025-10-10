@@ -2,9 +2,11 @@
   hosts: local
   connection: local
   vars:
-    number: 5
+    number1: 5
+    number2 : 12
   tasks: 
   - name: check given number is less than or not
     ansible.builtin.debug:
-      msg: "Given number {{number}} is less than 10"
+      msg: "Given number {{number1}} is less than 10"
+      msg: "Given number {{number2}} is less than 10"
     when: number < 10
